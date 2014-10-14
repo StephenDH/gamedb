@@ -2,7 +2,7 @@ class CreateGames < ActiveRecord::Migration
   def change
     create_table :games do |t|
       t.string :name
-      t.integer :genre
+      t.integer :genre_id
       t.string :discription
       t.integer :release
 
