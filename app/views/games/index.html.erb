@@ -15,7 +15,7 @@
     <% @games.each do |game| %>
       <tr>
         <td><%= game.name %></td>
-        <td><%= game.genre %></td>
+        <td><%= game.genre.name %></td>
         <td><%= game.discription %></td>
         <td><%= game.release %></td>
         <td><%= link_to 'Show', game %></td>
