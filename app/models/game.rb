@@ -3,6 +3,6 @@ class Game < ActiveRecord::Base
 	
 	validates :name, presence: true, length: {maximum: 32}
 	validates :genre_id, presence: true
-	validates :description, length: {maximum: 200}
-	validates :release, length: {minimum: 1900, maximum: 2100}
+	validates :discription, length: {maximum: 200}
+	validates :release, :numericality => {:greater_than_or_equal => 1900, :less_than_or_equal => 2100}
 end
