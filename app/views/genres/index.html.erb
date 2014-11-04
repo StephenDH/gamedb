@@ -12,8 +12,20 @@
     <% @genres.each do |genre| %>
       <tr>
         <td><%= link_to genre.name, genre %></td>
+        </td>
       </tr>
-    <% end %>
+      <tr>
+        <td>
+          <ul>
+            <% genre.games.each do |game| %>
+            <li>
+              <%= link_to game.name, game %>
+            </li>
+            <% end %>
+          </ul>
+        </td>
+      </tr>
+    <% end %>  
   </tbody>
 </table>
 
