@@ -10,8 +10,8 @@
   <%= @genre.description %>
 </p>
 <% if user_signed_in? %>
-<%= link_to 'Edit', edit_genre_path(@genre) %> |
-<td><%= link_to 'Destroy', @genre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-<%= link_to 'Back', genres_path %>
+<%= link_to 'Edit', edit_genre_path(@genre), :class => "button" %> 
+<td><%= link_to 'Destroy', @genre, method: :delete, data: { confirm: 'Are you sure?' }, :class => "button" %></td>
+<%= link_to 'Back', genres_path, :class => "button" %>
 <% end %>
 
