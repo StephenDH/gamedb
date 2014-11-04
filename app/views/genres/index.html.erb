@@ -19,6 +19,7 @@
           <ul>
             <% genre.games.each do |game| %>
             <li>
+              <%= image_tag game.image_url %>
               <%= link_to game.name, game %>
             </li>
             <% end %>

@@ -18,7 +18,6 @@
   <div class="field">
     <%= f.label :genre_id %><br>
     <%= f.collection_select :genre_id, Genre.all, :id, :name, {:prompt => true} %>
-    
   </div>
   <div class="field">
     <%= f.label :discription %><br>
@@ -27,6 +26,9 @@
   <div class="field">
     <%= f.label :release %><br>
     <%= f.number_field :release %>
+  </div>
+  <div class="field">
+    <%= f.file_field :image %>
   </div>
   <div class="actions">
     <%= f.submit %>
