@@ -12,13 +12,13 @@
   </head>
 
   <body>
-	<% if notice %>
-		<p class="alert alert-success"><%= notice %></p>
-	<% end %>
-	<% if alert %>
-		<p class="alert alert-danger"><%= alert %></p>
-	<% end %>
-	
+    <%= render 'layouts/navigation' %>
+    <% if notice %>
+    <div data-alert class="alert-box alert radius"><%=notice %></div>
+    <% end %>
+    <% if alert %>
+    	<div data-alert class="alert-box warning radius"><%= alert %></div>
+    <% end %>
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>
