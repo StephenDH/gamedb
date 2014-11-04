@@ -50,3 +50,5 @@ gem 'carrierwave'
 
 # Devise is a flexible authentication solution for Rails based on Warden
 gem 'devise'
+
+gem 'foundation-rails'
